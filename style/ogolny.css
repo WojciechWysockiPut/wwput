@@ -1,0 +1,65 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background: radial-gradient(circle at 50%,  rgb(149, 7, 7)25%,  rgb(95, 95, 212) 70%, peachpuff 75%); 
+
+}
+header
+{
+    
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 140, 0);
+    background-color: rgb(7, 78, 149);
+    border: 5px double  rgb(255, 140, 0);
+    text-align: center;
+}
+nav, article, aside
+{
+    height: 600px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgb(223, 174, 115); 
+}
+nav
+{
+    width: 14.6%;
+    float: left;
+   background-color:rgb(111, 204, 36) ; 
+}
+article
+{
+    width: 61%;
+    float: left;
+    overflow: auto;
+}
+aside
+{
+    width: 24.4%;
+    float: left;
+}
+footer
+{
+    border: 2px dotted black;
+    width: 100%;
+    clear: both;
+    background-color: rgb(223, 174, 115); 
+}
+iframe
+{
+    width: 100%;
+    height: 100%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

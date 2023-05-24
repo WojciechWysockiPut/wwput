@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalogowano</title>
+
+    <link rel="stylesheet" href="style/ogolny.css">
+    <link rel="stylesheet" href="style/menu.css">
+
+    
+
+
+</head>
+<body>
+    <header><h1>Plansza i pion</h1></header>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="stronaglowna.html">Strona głowna</a></li>
+            <li><a href="sklep.html">Sklep</a></li>
+            <li><a href="lele.html">Galeria zdjęć</a></li>
+            <li><a href="godziny.html">Godziny otwarcia</a></li>
+            <li><a href="konto.html">Twoje konto</a></li>
+            <li><a href="map.html"> Nasza ekipa</a></li>
+        </ul>
+    </nav>
+    <article>
+       <h2 align="center">Poprawnie zalogowano</h2>
+
+       <canvas id="myCanvas" width="610" height="550"></canvas>
+
+
+       <script>
+         window.addEventListener('load', function() {
+           var canvas = document.getElementById('myCanvas');
+           var context = canvas.getContext('2d');
+     
+           // Smiley
+           context.fillStyle = 'LawnGreen';
+           context.strokeStyle = 'black';
+           context.lineWidth = 5;
+           context.beginPath();
+           context.arc(320, 240, 200, 0, 2 * Math.PI);
+           context.fill();
+           context.stroke();
+           context.closePath();
+     
+           // Eyes
+           context.fillStyle = 'cyan';
+           context.beginPath();
+           context.arc(270, 175, 30, 0, 2 * Math.PI);
+           context.fill();
+           context.stroke();
+           context.closePath();
+     
+           context.beginPath();
+           context.arc(370, 175, 30, 0, 2 * Math.PI);
+           context.fill();
+           context.stroke();
+           context.closePath();
+     
+           // Mouth
+           context.strokeStyle = 'magenta';
+           context.lineWidth = 5;
+           context.beginPath();
+           context.arc(320, 240, 150, 0, -1 * Math.PI);
+           context.stroke();
+           context.closePath();
+     
+           // Text
+           context.font = '50px Arial Black';
+           context.fillText('Smile!', 230, 500);
+         });
+       </script>
+
+
+    </article>
+
+    <aside>
+        <iframe src="aside.html" frameborder="0"></iframe>
+    </aside>
+
+    <footer>
+        Stopka strony <br>
+        Wojciech Wysocki 153198 <br>
+        „Projekt strony internetowej wykonany w ramach
+        zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.”
+    </footer>
+
+</body>
+</html>

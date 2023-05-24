@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style/ogolny.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/lelel.css">
+    <script src="script/lelele.js"></script>
+    <style></style>
+ </head>
+ <body>
+    <header><h1>Plansza i pion</h1></header>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="stronaglowna.html">Strona głowna</a></li>
+            <li><a href="sklep.html">Sklep</a></li>
+            <li><a href="lele.html">Galeria zdjęć</a></li>
+            <li><a href="godziny.html">Godziny otwarcia</a></li>
+            <li><a href="konto.html">Twoje konto</a></li>
+            <li><a href="map.html"> Nasza ekipa</a></li>
+        </ul>
+    </nav>
+    <article>
+ <!-- Slideshow container -->
+ <div class="slideshow-container">
+<br><br>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="/Images/gra1.jpg" style="width:100%; height: 500px">
+    <div class="text" style="font-size: large; color: black; ">Gloomhaven</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="Images/gra2.png" style="width:100%; height: 500px">
+    <div class="text" style="font-size: large; color: black; ">Century Korzenny szlak</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="Images/gra3.jpg" style="width:100%; height: 500px">
+    <div class="text" style="font-size: large; color: black; ">Zew Cthulhu</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="Images/gra4.jpg" style="width:100%; height: 500px">
+    <div class="text" style="font-size: large; color: black;">Brzdęk nie drażnij smoka</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="Images/gra5.jpg" style="width:100%; height: 500px">
+    <div class="text" style="font-size: large; color: black; ">Karty Dżentelmenów</div>
+  </div>
+
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div> 
+
+</article>
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1700); // Change image every 2 seconds
+  }
+  </script>    
+      
+
+    <aside>
+      <iframe src="aside.html" frameborder="0"></iframe>
+    </aside>
+
+    <footer>
+      Stopka strony <br>
+      Wojciech Wysocki 153198 <br>
+      „Projekt strony internetowej wykonany w ramach
+      zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.”
+  </footer>
+
+
+ </body>
+ </html>

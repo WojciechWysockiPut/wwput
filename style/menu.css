@@ -1,0 +1,38 @@
+nav ul, nav ul li
+{
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li
+{
+    border-bottom: 1px solid darkcyan;
+}
+nav ul a:link
+{
+    display: block;
+    text-decoration: none;
+    width: 166px;
+    background-color: rgb(148, 241, 73);
+    padding: 7px;
+    font-weight: bold;
+    color: rgb(19, 98, 207);
+    border-left: 10px solid darkgreen;
+}
+nav ul a:visited
+{
+    display: block;
+    text-decoration: none;
+    width: 166px;
+    background-color: rgb(148, 241, 73);
+    padding: 7px;
+    font-weight: bold;
+    color: rgb(64, 5, 126);
+    border-left: 10px solid darkgreen;
+}
+nav ul a:hover
+{
+    border-left: 15px solid blue;
+    background-color: rgb(123, 226, 39);
+}

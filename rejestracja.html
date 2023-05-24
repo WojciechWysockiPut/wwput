@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+
+    <link rel="stylesheet" href="style/ogolny.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/form.css">
+    <script src="script/licznik.js"></script>
+
+</head>
+<body>
+    <header><h1>Plansza i pion</h1></header>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="stronaglowna.html">Strona główna</a></li>
+            <li><a href="sklep.html">Sklep</a></li>
+            <li><a href="lele.html">Galeria zdjęć</a></li>
+            <li><a href="godziny.html">Godziny otwarcia</a></li>
+            <li><a href="konto.html">Twoje konto</a></li>
+            <li><a href="map.html">Nasza ekipa</a></li>
+        </ul>
+    </nav>
+
+    <article>
+       <h3>Zarejestruj nowe konto</h3>
+        
+       <form action="https://formspree.io/f/xzbqqzep" method="POST">
+        <p>Pola oznaczone <em>*</em> są wymagane</p>
+
+        <fieldset>
+        <legend>Dane Kontaktowe</legend>
+        <label for="Imię">Imię<em>*</em></label>
+        <input type="text" name="Imię" id="Imię" placeholder="Jan" required><br>
+        <label for="Nazwisko">Nazwisko<em>*</em></label>
+        <input type="text" name="Nazwisko" id="Nazwisko" placeholder="Nowak" required><br>
+        <label for="email">Adres email<em>*</em></label>
+        <input type="email" name="_replyto" id="email" required>   
+        </fieldset>
+
+        <fieldset>
+            <legend>Dane adresowe</legend>
+            <label for="Ulica">Ulica<em>*</em></label>
+            <input type="text" name="ulica" id="Ulica" placeholder="ul./al./os./pl." required><br>
+            <label for="Kod">Kod pocztowy<em>*</em></label>
+            <input type="text" name="kod" id="Kod" placeholder="00-000" required><br>
+            <label for="Miasto">Miasto<em>*</em></label>
+            <input type="text" name="miasto" id="Miasto" placeholder="Warszawa" required><br>
+            <label for="Kraj">Kraj<em>*</em></label>
+            <input type="text" name="kraj" id="Kraj" placeholder="Polska" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dodatkowe informacje<sup>1</sup></legend>
+            <label for="Wiek">Wiek</label>
+            <input type="number" name="wiek" id="Wiek"><br>
+            <label for="plec">Płeć</label>
+                <select name="plec" id="plec">
+                    <option value="Mężczyzna">Mężczyzna</option>
+                    <option value="Kobieta">Kobieta</option>
+                    <option value="Inna">Inna</option>
+                </select> <br>
+                <legend>Interesujące cię tytuły</legend>
+                <input type="checkbox" name="przygodowe" id="g1"><label for="g1">Przygodowe</label><br>
+                <input type="checkbox" name="handlowe" id="g2"><label for="g2">Handlowe</label><br>
+                <input type="checkbox" name="bitewne" id="g3"><label for="g3">Bitewne</label><br>
+                <input type="checkbox" name="fabularne" id="g4"><label for="g4">Fabularne</label><br>
+                <input type="checkbox" name="imprezowe" id="g5"><label for="g5">Imprezowe</label><br>
+                <input type="checkbox" name="logiczne" id="g6"><label for="g6">Logiczne</label><br>
+                <input type="checkbox" name="karciane" id="g7"><label for="g7">Karciane</label><br>
+                <input type="checkbox" name="inne" id="g8"><label for="g8">Inne</label><br>
+                <label for="wotc">Jak bardzo nie lubisz firmy Wizards of the Coast?</label>
+                <input type="range" name="wotc" id="wotc">
+        </fieldset>
+        <fieldset>
+            <legend>Zatwierdź</legend>
+            <input type="submit" value="Zatwierdź">
+            <input type="reset" value="Wyczyść zmiany">
+        </fieldset>
+
+    </form>
+
+    <p>1. Informacje zbierane wyłącznie do celów jak najlepszego dopasowania proponowanych produktów</p>
+    </article>
+
+    <aside>
+        <iframe src="aside.html" frameborder="0"></iframe>
+    </aside>
+
+    <footer>
+        Stopka strony <br>
+        Wojciech Wysocki 153198 <br>
+        „Projekt strony internetowej wykonany w ramach
+        zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.”
+    </footer>
+
+</body>
+</html>
